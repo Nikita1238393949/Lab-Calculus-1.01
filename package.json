@@ -1,6 +1,7 @@
 {
   "name": "lab1.01reimagined",
   "version": "0.1.0",
+  "homepage": "https://Nikita1238393949.github.io/Lab-Calculus-1.01",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.3.3",
