@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Lab-Calculus-1.01/static/js/main.14a3cd15.js",
-    "static/js/65.0e0809b5.chunk.js": "/Lab-Calculus-1.01/static/js/65.0e0809b5.chunk.js",
-    "static/js/549.b285dd1f.chunk.js": "/Lab-Calculus-1.01/static/js/549.b285dd1f.chunk.js",
-    "static/js/268.6098d1e2.chunk.js": "/Lab-Calculus-1.01/static/js/268.6098d1e2.chunk.js",
-    "static/js/146.87ca5af0.chunk.js": "/Lab-Calculus-1.01/static/js/146.87ca5af0.chunk.js",
+    "main.js": "/Lab-Calculus-1.01/static/js/main.3038d569.js",
+    "static/js/161.08f36cde.chunk.js": "/Lab-Calculus-1.01/static/js/161.08f36cde.chunk.js",
+    "static/js/948.ca9e1048.chunk.js": "/Lab-Calculus-1.01/static/js/948.ca9e1048.chunk.js",
+    "static/js/196.5bd9a926.chunk.js": "/Lab-Calculus-1.01/static/js/196.5bd9a926.chunk.js",
+    "static/js/863.cce0b835.chunk.js": "/Lab-Calculus-1.01/static/js/863.cce0b835.chunk.js",
     "static/css/84.eea04699.chunk.css": "/Lab-Calculus-1.01/static/css/84.eea04699.chunk.css",
     "static/media/KaTeX_AMS-Regular.ttf": "/Lab-Calculus-1.01/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/Lab-Calculus-1.01/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
@@ -67,14 +67,14 @@
     "static/media/KaTeX_Size3-Regular.woff": "/Lab-Calculus-1.01/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/Lab-Calculus-1.01/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/Lab-Calculus-1.01/index.html",
-    "main.14a3cd15.js.map": "/Lab-Calculus-1.01/static/js/main.14a3cd15.js.map",
-    "65.0e0809b5.chunk.js.map": "/Lab-Calculus-1.01/static/js/65.0e0809b5.chunk.js.map",
-    "549.b285dd1f.chunk.js.map": "/Lab-Calculus-1.01/static/js/549.b285dd1f.chunk.js.map",
-    "268.6098d1e2.chunk.js.map": "/Lab-Calculus-1.01/static/js/268.6098d1e2.chunk.js.map",
-    "146.87ca5af0.chunk.js.map": "/Lab-Calculus-1.01/static/js/146.87ca5af0.chunk.js.map",
+    "main.3038d569.js.map": "/Lab-Calculus-1.01/static/js/main.3038d569.js.map",
+    "161.08f36cde.chunk.js.map": "/Lab-Calculus-1.01/static/js/161.08f36cde.chunk.js.map",
+    "948.ca9e1048.chunk.js.map": "/Lab-Calculus-1.01/static/js/948.ca9e1048.chunk.js.map",
+    "196.5bd9a926.chunk.js.map": "/Lab-Calculus-1.01/static/js/196.5bd9a926.chunk.js.map",
+    "863.cce0b835.chunk.js.map": "/Lab-Calculus-1.01/static/js/863.cce0b835.chunk.js.map",
     "84.eea04699.chunk.css.map": "/Lab-Calculus-1.01/static/css/84.eea04699.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/main.14a3cd15.js"
+    "static/js/main.3038d569.js"
   ]
 }
