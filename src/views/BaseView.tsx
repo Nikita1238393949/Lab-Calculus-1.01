@@ -11,7 +11,7 @@ const BaseView = () => {
         <Layout>
             <Layout.Content>
                 <Row gutter={[17, 24]} style={{margin:"50px"}}>
-                    <Col xs={24} md={13}>
+                    <Col xs={24} lg={13} xxl={12}>
                     <Card>
                         <Typography.Title>Лабораторная работа 1.01</Typography.Title>
                         <Typography.Title level={3}>Аналитическая часть</Typography.Title>
@@ -62,7 +62,7 @@ const BaseView = () => {
                         </ol>
                     </Card>
                 </Col>
-                <Col xs={24} md={11}>
+                <Col xs={24} lg={11} xxl={10}>
                     <Card>
                         <Typography.Title level={3}>Требования к отчету</Typography.Title>
                         <ol>
