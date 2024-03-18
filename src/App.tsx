@@ -1,19 +1,21 @@
 import React from 'react';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {ConfigProvider, theme} from "antd";
+import {createHashRouter, RouterProvider} from "react-router-dom";
+import {ConfigProvider, Skeleton, theme} from "antd";
 
 const BaseViewPage = React.lazy(() =>
     import("./views/BaseView")
 )
 
 function App() {
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         {path: "/", element: <BaseViewPage/>}
     ])
     document.body.style.backgroundColor = "black"
     return (
         <ConfigProvider theme={{algorithm: theme.darkAlgorithm}}>
-            <RouterProvider router={router}/>
+            <React.Suspense fallback={<Skeleton/>}>
+                <RouterProvider router={router}/>
+            </React.Suspense>
         </ConfigProvider>
     );
 }
