@@ -8,9 +8,10 @@ import {useNavigate} from "react-router-dom";
 const BaseView = () => {
     const navigate = useNavigate()
     return (
-        <Layout style={{margin: "50px"}}>
-            <Row gutter={16}>
-                <Col span={12}>
+        <Layout>
+            <Layout.Content>
+                <Row gutter={[17, 24]} style={{margin:"50px"}}>
+                    <Col xs={24} md={13}>
                     <Card>
                         <Typography.Title>Лабораторная работа 1.01</Typography.Title>
                         <Typography.Title level={3}>Аналитическая часть</Typography.Title>
@@ -61,7 +62,7 @@ const BaseView = () => {
                         </ol>
                     </Card>
                 </Col>
-                <Col span={12}>
+                <Col xs={24} md={11}>
                     <Card>
                         <Typography.Title level={3}>Требования к отчету</Typography.Title>
                         <ol>
@@ -93,7 +94,7 @@ const BaseView = () => {
                         </Button>
                     </Card>
                     <Card style={{marginTop: "17px"}}>
-                         <pre style={{margin: "4px"}}>
+                         <pre style={{margin: "3.5px"}}>
       {`
                                       ___
              |\\__/,|   (\`\\        _.-|   |          |\\__/,|   (\`\\
@@ -106,6 +107,7 @@ const BaseView = () => {
                     </Card>
                 </Col>
             </Row>
+            </Layout.Content>
         </Layout>
     )
 }
