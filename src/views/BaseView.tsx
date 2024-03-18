@@ -3,8 +3,10 @@ import {Button, Card, Col, Layout, Row, Typography} from "antd";
 import 'katex/dist/katex.min.css';
 import {InlineMath} from 'react-katex';
 import {EditOutlined} from "@ant-design/icons";
+import {useNavigate} from "react-router-dom";
 
 const BaseView = () => {
+    const navigate = useNavigate()
     return (
         <Layout style={{margin: "50px"}}>
             <Row gutter={16}>
@@ -85,7 +87,8 @@ const BaseView = () => {
                         <Typography style={{fontSize: "25px", marginTop: "25px", marginBottom: "25px"}}>
                             <InlineMath math={"f(x)=x^2 \\quad [1,2]"}/>
                         </Typography>
-                        <Button icon={<EditOutlined/>} type={"primary"} style={{minWidth: "250px"}}>
+                        <Button icon={<EditOutlined/>} type={"primary"} onClick={() => navigate("/view")}
+                                style={{minWidth: "250px"}}>
                             Перейти к решению
                         </Button>
                     </Card>
