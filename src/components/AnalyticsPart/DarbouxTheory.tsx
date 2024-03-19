@@ -147,7 +147,7 @@ const DarbouxTheory = () => {
             Приводя к общему знаменателю и упрощая, мы приходим к окончательному
             выражению верхней и нижней суммы Дарбу
           </Typography.Text>
-          <BlockMath math={"\\large L(f,P)=\\frac{14n^2 + 9n + 1}{6n^2}"} />
+          <BlockMath math={"\\large L(f,P)=\\frac{14n^2 - 9n + 1}{6n^2}"} />
           <BlockMath math={"\\large U(f,P)=\\frac{14n^2+9n+1}{6n^2}"} />
         </Col>
       </Row>
