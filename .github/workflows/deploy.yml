@@ -2,22 +2,22 @@ name: AutoDeploy
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: main 
-    - name: Install and Build
-      run: |
-        npm install
-        npm run build
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.4
-      with:
-        branch: prod  
-        folder: build 
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: prod
+          folder: build
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
