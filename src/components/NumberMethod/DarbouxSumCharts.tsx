@@ -10,6 +10,7 @@ import {
     Title,
     Tooltip
 } from 'chart.js';
+import {calculateDataSetforFunc} from "./MathFunctions";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -42,16 +43,17 @@ const DarbouxSumsChart = ({n}: { n: number }) => {
     };
 
     const {lowerSumPoints, upperSumPoints} = calculateDarbouxSums();
-
+    const funcPoints = calculateDataSetforFunc()
     const chartData = {
         datasets: [
             {
                 label: 'Lower Darboux Sum',
                 data: lowerSumPoints,
-                borderColor: 'rgba(75,192,192,1)',
+                borderColor: '#66CC33',
                 borderWidth: 2,
                 fill: false,
                 stepped: true,
+                pointRadius: 0,
             },
             {
                 label: 'Upper Darboux Sum',
@@ -60,6 +62,14 @@ const DarbouxSumsChart = ({n}: { n: number }) => {
                 borderWidth: 2,
                 fill: false,
                 stepped: true,
+                pointRadius: 0,
+            },
+            {
+                label: 'f(x)',
+                data: funcPoints,
+                borderColor: '#CCFFFF',
+                borderWidth: 1,
+                pointRadius: 0
             }
         ],
     };

@@ -10,6 +10,7 @@ import {
     Title,
     Tooltip
 } from 'chart.js';
+import {calculateDataSetforFunc} from "./MathFunctions";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -55,7 +56,7 @@ const RiemannSumsChart: React.FC<RiemannSumsProps> = ({n, method}) => {
     };
 
     const riemannPoints = calculateRiemannSums();
-
+    const funcPoints = calculateDataSetforFunc();
 
     const chartData = {
         datasets: [
@@ -66,6 +67,14 @@ const RiemannSumsChart: React.FC<RiemannSumsProps> = ({n, method}) => {
                 borderWidth: 2,
                 fill: false,
                 stepped: true,
+                pointRadius: 0
+            },
+            {
+                label: "f(x)",
+                data: funcPoints,
+                borderColor: "#CCFFFF",
+                borderWidth: 1,
+                pointRadius: 0
             }
         ],
     };

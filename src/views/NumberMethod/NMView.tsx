@@ -15,13 +15,14 @@ const NMView = () => {
     const [RiemanForm] = Form.useForm()
     const [DarbouxForm] = Form.useForm()
     return (
-        <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 20]} justify="center" align="top">
+        <Row gutter={[{xs: 8, sm: 16, md: 24, lg: 32}, 20]} justify="center" align="top">
             <Col span={10}>
                 <Typography.Title level={3}>Ступенчатые фигуры</Typography.Title>
                 <Card style={{marginBottom: "20px"}}>
                     <DarbouxSumsChart n={darbouxDataState}/>
                 </Card>
-                <Form form={DarbouxForm} onFinish={(values) => setdarbouxDataState(values.DarbouxN)} initialValues={{DarbouxN: 5}}>
+                <Form form={DarbouxForm} onFinish={(values) => setdarbouxDataState(values.DarbouxN)}
+                      initialValues={{DarbouxN: 5}}>
                     <Form.Item name={"DarbouxN"} label={"Количество разбиений"}>
                         <Input/>
                     </Form.Item>
@@ -32,7 +33,7 @@ const NMView = () => {
                     </Form.Item>
                 </Form>
             </Col>
-                <Divider type="vertical" style={{height:"550px", marginRight:"30px", marginLeft:"30px"}}/>
+            <Divider type="vertical" style={{height: "550px", marginRight: "30px", marginLeft: "30px"}}/>
             <Col span={10}>
                 <Typography.Title level={3}>Графики интегральных сумм</Typography.Title>
                 <Card style={{marginBottom: "20px"}}>
@@ -43,7 +44,7 @@ const NMView = () => {
                         Nvalue: values.NValue,
                         TypeOf: values.TypeOf
                     });
-                }} initialValues={{NValue: 5 , TypeOf : "left"}}>
+                }} initialValues={{NValue: 5, TypeOf: "left"}}>
                     <Form.Item name={"NValue"} label={"Разбиения"}>
                         <Input/>
                     </Form.Item>

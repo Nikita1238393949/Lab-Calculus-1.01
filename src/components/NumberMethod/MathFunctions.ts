@@ -1,15 +1,29 @@
-const calculateDarbouxSums = (n: number, from: number, to: number): { x: number[], y: number[] } => {
-    const step = (to - from) / n;
-    let xValues = [];
-    let yValues = [];
+interface Trapezoid {
+    f: (x: number) => number
+    a: number
+    b: number
+    n: number
+}
 
-    for (let i = 0; i <= n; i++) {
-        const x = from + i * step;
-        xValues.push(x);
-        yValues.push(x * x);
+const calculateDataSetforFunc = () => {
+    const funcPoints = []
+    const from = 1
+    const to = 2
+    for (let x = from; x <= to; x += 0.05) {
+        const y = x * x
+        funcPoints.push({x: x, y: y})
     }
+    return funcPoints
+}
 
-    return {x: xValues, y: yValues};
-};
+const trapezoidIntegral = ({f, a, b, n}: Trapezoid): number => {
+    const h = (b - a) / n;
+    let sum = 0.5 * (f(a) + f(b));
+    for (let i = 1; i < n; i++) {
+        sum += f(a + i * h);
+    }
+    return sum * h;
+}
 
-export {calculateDarbouxSums}
+
+export {calculateDataSetforFunc, trapezoidIntegral}
