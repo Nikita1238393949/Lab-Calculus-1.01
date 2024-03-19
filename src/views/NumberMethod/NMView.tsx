@@ -48,8 +48,9 @@ const NMView = () => {
   const [DarbouxForm] = Form.useForm();
 
   const onFinishRiemann = (values: RiemannFormValues) => {
-    const from = Number(values.interval[1]);
-    const to = Number(values.interval[3]);
+    const intervalArray = JSON.parse(values.interval);
+    const from = intervalArray[0];
+    const to = intervalArray[1];
     setRiemannDataState({
       RiemannN: values.RiemannN,
       TypeOf: values.TypeOf,
@@ -58,8 +59,9 @@ const NMView = () => {
     });
   };
   const onFinishDarboux = (values: DarbouxFormValues) => {
-    const from = Number(values.interval[1]);
-    const to = Number(values.interval[3]);
+    const intervalArray = JSON.parse(values.interval);
+    const from = intervalArray[0];
+    const to = intervalArray[1];
     setdarbouxDataState({
       NValueDarboux: values.DarbouxN,
       to: to,

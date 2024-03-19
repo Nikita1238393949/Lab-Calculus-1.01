@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const BaseView = () => {
   const navigate = useNavigate();
   return (
-    <Layout>
+    <Layout style={{ flex: 0 }}>
       <Layout.Content>
         <Row gutter={[17, 24]} style={{ margin: "50px" }}>
           <Col xs={24} lg={13} xxl={12}>

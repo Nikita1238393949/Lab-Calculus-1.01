@@ -10,9 +10,15 @@ function App() {
     { path: "/", element: <BaseViewPage /> },
     { path: "/view", element: <Lab1ViewPage /> },
   ]);
-  document.body.style.backgroundColor = "black";
   return (
-    <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#0099FF",
+        },
+        algorithm: theme.darkAlgorithm,
+      }}
+    >
       <React.Suspense fallback={<Skeleton />}>
         <RouterProvider router={router} />
       </React.Suspense>
