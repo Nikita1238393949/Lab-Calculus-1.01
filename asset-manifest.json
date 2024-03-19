@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Lab-Calculus-1.01/static/js/main.66b0ab37.js",
+    "main.js": "/Lab-Calculus-1.01/static/js/main.ec91a795.js",
     "static/js/755.78179da9.chunk.js": "/Lab-Calculus-1.01/static/js/755.78179da9.chunk.js",
-    "static/js/495.2753e6e9.chunk.js": "/Lab-Calculus-1.01/static/js/495.2753e6e9.chunk.js",
+    "static/js/495.e587be56.chunk.js": "/Lab-Calculus-1.01/static/js/495.e587be56.chunk.js",
     "static/css/474.71d727fa.chunk.css": "/Lab-Calculus-1.01/static/css/474.71d727fa.chunk.css",
     "static/js/474.7495d36b.chunk.js": "/Lab-Calculus-1.01/static/js/474.7495d36b.chunk.js",
     "static/js/893.8c6eef61.chunk.js": "/Lab-Calculus-1.01/static/js/893.8c6eef61.chunk.js",
@@ -67,14 +67,14 @@
     "static/media/KaTeX_Size3-Regular.woff": "/Lab-Calculus-1.01/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/Lab-Calculus-1.01/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/Lab-Calculus-1.01/index.html",
-    "main.66b0ab37.js.map": "/Lab-Calculus-1.01/static/js/main.66b0ab37.js.map",
+    "main.ec91a795.js.map": "/Lab-Calculus-1.01/static/js/main.ec91a795.js.map",
     "755.78179da9.chunk.js.map": "/Lab-Calculus-1.01/static/js/755.78179da9.chunk.js.map",
-    "495.2753e6e9.chunk.js.map": "/Lab-Calculus-1.01/static/js/495.2753e6e9.chunk.js.map",
+    "495.e587be56.chunk.js.map": "/Lab-Calculus-1.01/static/js/495.e587be56.chunk.js.map",
     "474.71d727fa.chunk.css.map": "/Lab-Calculus-1.01/static/css/474.71d727fa.chunk.css.map",
     "474.7495d36b.chunk.js.map": "/Lab-Calculus-1.01/static/js/474.7495d36b.chunk.js.map",
     "893.8c6eef61.chunk.js.map": "/Lab-Calculus-1.01/static/js/893.8c6eef61.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.66b0ab37.js"
+    "static/js/main.ec91a795.js"
   ]
 }
