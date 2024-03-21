@@ -2,16 +2,16 @@ import React from "react";
 import { Col, Divider, Typography } from "antd";
 import { BlockMath, InlineMath } from "react-katex";
 import "katex/dist/katex.min.css";
-import { StyledRow } from "../NumberMethod/MathFunctions";
+import { StyledRow } from "../StyledComponents";
 const CheckIntegralTheory = () => {
   return (
     <>
       <StyledRow gutter={16}>
-        <Typography.Title level={2}>
-          Сравнить со значением, полученным по формуле Ньютона-Лейбница.
-        </Typography.Title>
-        <Divider />
         <Col span={12}>
+          <Typography.Title level={2}>
+            Сравнить со значением, полученным по формуле Ньютона-Лейбница.
+          </Typography.Title>
+          <Divider />
           <Typography.Title level={3}>Шаг 1: Первообразные</Typography.Title>
           <Typography.Text>Формула Ньютона-Лейбница гласит:</Typography.Text>
           <BlockMath math={"\\large \\int_{a}^{b} f(x) \\, dx = F(b) - F(a)"} />
@@ -49,6 +49,13 @@ const CheckIntegralTheory = () => {
               "\\large \\int_{1}^{2} x^2 \\, dx = \\frac{2^3}{3} - \\frac{1^3}{3} = \\frac{8}{3} - \\frac{1}{3} = \\frac{7}{3}"
             }
           />
+          <Divider />
+          <Typography.Title level={3}>Шаг 3: Вывод</Typography.Title>
+          <Typography.Text>
+            Следуя рассчетам интеграла сделанных через суммы Дарбу и через
+            формулу Ньютона-Лейбница мы можем утверждать что рассчеты проведены
+            верно
+          </Typography.Text>
         </Col>
       </StyledRow>
     </>

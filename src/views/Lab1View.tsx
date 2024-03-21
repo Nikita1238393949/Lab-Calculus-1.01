@@ -5,8 +5,9 @@ import {
   FieldNumberOutlined,
   FunctionOutlined,
 } from "@ant-design/icons";
-import NMView from "./NumberMethod/NMView";
-import APView from "./AnalyticsPart/APView";
+import NMView from "./NMView";
+import APView from "./APView";
+import ReportView from "./ReportView";
 
 const Lab1View = () => {
   const items: TabsProps["items"] = [
@@ -26,6 +27,7 @@ const Lab1View = () => {
       key: "3",
       label: "Отчет",
       icon: <BookOutlined />,
+      children: <ReportView />,
     },
   ];
   return (

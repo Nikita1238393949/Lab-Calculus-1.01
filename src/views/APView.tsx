@@ -5,9 +5,9 @@ import {
   ProductOutlined,
   ProjectOutlined,
 } from "@ant-design/icons";
-import DarbouxTheory from "../../components/AnalyticsPart/DarbouxTheory";
-import ProveRimannTheory from "../../components/AnalyticsPart/ProveRimanTheory";
-import CheckIntegralTheory from "../../components/AnalyticsPart/CheckIntegralTheory";
+import DarbouxTheory from "../components/AnalyticsPart/DarbouxTheory";
+import ProveRimannTheory from "../components/AnalyticsPart/ProveRimanTheory";
+import CheckIntegralTheory from "../components/AnalyticsPart/CheckIntegralTheory";
 
 const APView = () => {
   const items: TabsProps["items"] = [

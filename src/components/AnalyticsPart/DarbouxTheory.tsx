@@ -1,8 +1,8 @@
 import React from "react";
-import { Col, Divider,Typography } from "antd";
+import { Col, Divider, Typography } from "antd";
 import "katex/dist/katex.min.css";
 import { BlockMath, InlineMath } from "react-katex";
-import { StyledRow } from "../NumberMethod/MathFunctions";
+import { StyledRow } from "../StyledComponents";
 
 const DarbouxTheory = () => {
   return (

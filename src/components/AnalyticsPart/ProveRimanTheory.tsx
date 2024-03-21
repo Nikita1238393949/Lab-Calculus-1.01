@@ -3,7 +3,7 @@ import "katex/dist/katex.min.css";
 import { Col, Divider, Typography } from "antd";
 
 import { BlockMath, InlineMath } from "react-katex";
-import { StyledRow } from "../NumberMethod/MathFunctions";
+import { StyledRow, VerticalDivider } from "../StyledComponents";
 const ProveRimannTheory = () => {
   return (
     <StyledRow gutter={16}>
@@ -45,10 +45,7 @@ const ProveRimannTheory = () => {
           <InlineMath math={"[1,2]"} />
         </Typography.Text>
       </Col>
-      <Divider
-        type={"vertical"}
-        style={{ height: "auto", marginRight: "20px" }}
-      />
+      <VerticalDivider type={"vertical"} />
       <Col span={11}>
         <Typography.Title level={2}>
           Найти пределы сумм Дарбу, найти значения интеграла.

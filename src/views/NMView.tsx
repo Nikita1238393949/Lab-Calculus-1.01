@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DarbouxSumsChart from "../../components/NumberMethod/DarbouxSumCharts";
+import DarbouxSumsChart from "../components/NumberMethod/DarbouxSumCharts";
 import {
   Button,
   Card,
@@ -11,7 +11,7 @@ import {
   Row,
   Typography,
 } from "antd";
-import RiemannSumsChart from "../../components/NumberMethod/RiemannSumsChart";
+import RiemannSumsChart from "../components/NumberMethod/RiemannSumsChart";
 import { CheckOutlined } from "@ant-design/icons";
 
 interface RiemannDataValues {

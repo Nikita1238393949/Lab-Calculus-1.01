@@ -1,12 +1,3 @@
-import styled from "styled-components";
-import { Row } from "antd";
-
-const StyledRow = styled(Row)`
-  padding: 30px;
-  padding-top: 0;
-  padding-right: 0;
-`;
-
 interface Trapezoid {
   f: (x: number) => number;
   a: number;
@@ -97,5 +88,4 @@ export {
   trapezoidIntegral,
   calculateRiemannSums,
   calculateDarbouxSums,
-  StyledRow,
 };
