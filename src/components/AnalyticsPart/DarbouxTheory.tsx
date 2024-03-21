@@ -2,14 +2,12 @@ import React from "react";
 import { Col, Divider, Row, Typography } from "antd";
 import "katex/dist/katex.min.css";
 import { BlockMath, InlineMath } from "react-katex";
+import { StyledRow } from "../NumberMethod/MathFunctions";
 
 const DarbouxTheory = () => {
   return (
     <>
-      <Row
-        gutter={16}
-        style={{ padding: "30px", paddingTop: 0, paddingRight: 0 }}
-      >
+      <StyledRow gutter={16}>
         <Col span={11}>
           <Typography.Title level={2}>
             Построить верхнюю и нижнюю суммы Дарбу для равномерного разбиения на
@@ -150,7 +148,7 @@ const DarbouxTheory = () => {
           <BlockMath math={"\\large L(f,P)=\\frac{14n^2 - 9n + 1}{6n^2}"} />
           <BlockMath math={"\\large U(f,P)=\\frac{14n^2+9n+1}{6n^2}"} />
         </Col>
-      </Row>
+      </StyledRow>
     </>
   );
 };

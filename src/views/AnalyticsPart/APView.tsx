@@ -1,8 +1,13 @@
 import React from "react";
 import { Card, Tabs, TabsProps } from "antd";
-import { AlignRightOutlined, ProjectOutlined } from "@ant-design/icons";
+import {
+  AlignRightOutlined,
+  ProductOutlined,
+  ProjectOutlined,
+} from "@ant-design/icons";
 import DarbouxTheory from "../../components/AnalyticsPart/DarbouxTheory";
-import ProveRimanTheory from "../../components/AnalyticsPart/ProveRimanTheory";
+import ProveRimannTheory from "../../components/AnalyticsPart/ProveRimanTheory";
+import CheckIntegralTheory from "../../components/AnalyticsPart/CheckIntegralTheory";
 
 const APView = () => {
   const items: TabsProps["items"] = [
@@ -16,15 +21,13 @@ const APView = () => {
       key: "2",
       label: "Доказательство интегрируемости",
       icon: <AlignRightOutlined />,
-      children: <ProveRimanTheory />,
+      children: <ProveRimannTheory />,
     },
     {
       key: "3",
-      label: "228",
-    },
-    {
-      key: "4",
-      label: "228",
+      label: "Проверка интеграла",
+      icon: <ProductOutlined />,
+      children: <CheckIntegralTheory />,
     },
   ];
   return (
