@@ -19,12 +19,7 @@ interface RiemannDataValues {
   TypeOf: "left" | "right" | "middle" | "random";
   from: number;
   to: number;
-}
-
-interface RiemannFormValues {
-  RiemannN: number;
-  interval: string;
-  TypeOf: "left" | "right" | "middle" | "random";
+  interval?: string;
 }
 
 interface DarbouxFormValues {
@@ -47,8 +42,8 @@ const NMView = () => {
   const [RiemanForm] = Form.useForm();
   const [DarbouxForm] = Form.useForm();
 
-  const onFinishRiemann = (values: RiemannFormValues) => {
-    const intervalArray = JSON.parse(values.interval);
+  const onFinishRiemann = (values: RiemannDataValues) => {
+    const intervalArray = JSON.parse(String(values.interval));
     const from = intervalArray[0];
     const to = intervalArray[1];
     setRiemannDataState({
