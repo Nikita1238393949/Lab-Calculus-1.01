@@ -47,7 +47,7 @@ const DarbouxTheory = () => {
             подинтервале берется минимальное значение функции, что для{" "}
             <InlineMath math={"f(x)=x^2"} /> на нашем интервале будет в начале
             каждого подинтервала. Таким образом{" "}
-            <BlockMath math={"\\large m_i=f(x_i-1)"} />
+            <BlockMath math={"\\large m_i=f(x_{i-1})"} />
           </Typography.Text>
           <Typography.Text>
             Для верхней суммы Дарбу <InlineMath math={"U(f,p)"} /> что для{" "}
