@@ -2,9 +2,7 @@ import styled from "styled-components";
 import { Divider, Row } from "antd";
 
 const StyledRow = styled(Row)`
-  padding: 30px;
-  padding-top: 0;
-  padding-right: 0;
+  padding: 0 0 30px 30px;
 `;
 
 const VerticalDivider = styled(Divider)`

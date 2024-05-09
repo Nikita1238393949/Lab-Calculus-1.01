@@ -11,6 +11,8 @@ import {
   Tooltip,
 } from "chart.js";
 import { calculateDarbouxSums, calculateDataSetforFunc } from "./MathFunctions";
+import {Divider, Flex, Typography} from "antd";
+import {n10ChartData, n35ChartData, n5ChartData} from "../ChartDatas";
 
 ChartJS.register(
   CategoryScale,
@@ -22,6 +24,31 @@ ChartJS.register(
   Legend,
 );
 
+export const ReportDarbouxCharts = () => {
+  const options = {
+    scales: {
+      x: {
+        type: "linear" as const,
+        position: "bottom" as const,
+      },
+    },
+    elements: {
+      line: {
+        tension: 0,
+      },
+    },
+  };
+
+  return (
+    <Flex gap={"large"} style={{width:"30%"}}>
+      <Line data={n5ChartData} options={options} />
+      <Divider type={"vertical"} style={{ height: "auto" }} />
+      <Line data={n10ChartData} options={options} />
+      <Divider type={"vertical"} style={{ height: "auto" }} />
+      <Line data={n35ChartData} options={options} />
+    </Flex>
+  );
+};
 const DarbouxSumsChart = ({
   n,
   to,
@@ -62,7 +89,7 @@ const DarbouxSumsChart = ({
       },
     ],
   };
-
+  console.log(chartData);
   const options = {
     scales: {
       x: {
